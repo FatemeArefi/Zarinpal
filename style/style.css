@@ -681,7 +681,7 @@ header {
 
 .logo {
   margin: 11px 28px;
-  order: 1; /* راست‌چین کردن لوگو */
+  order: 1;
 }
 
 .header-ul {
@@ -725,8 +725,8 @@ header {
 .hamburger-icon {
   width: 27px;
   display: none;
-  order: 3; /* چپ‌چین کردن همبرگر منو */
-  cursor: pointer; /* افزودن نشانه‌گر برای کلیک */
+  order: 3;
+  cursor: pointer;
 }
 
 .hamburger-menu {
@@ -738,13 +738,13 @@ header {
   width: 100%;
   font-family: YekanBakhMedium;
   transform: translateY(-100%);
-  display: none; /* مخفی کردن منوی همبرگر به صورت پیش‌فرض */
+  display: none;
   flex-direction: column;
   align-items: center;
 }
 
 .hamburger-menu.show-hamburger-menu {
-  display: flex; /* نمایش منوی همبرگر در حالت فعال */
+  display: flex;
 }
 
 .cross-icon {
@@ -1132,16 +1132,11 @@ header {
   color: #000;
   border-radius: 10px;
 }
-
-/* .bell{
-  background-color: #2e82ff;
-  width: fit-content;
-  padding: 7px 7px 0;
-  border-radius: 50%;
-  bottom: 20px;
-  position: fixed;
-  left: 20px;
-}*/
+.footer h4 {
+  background-color: #ffd900;
+  color: #000;
+  text-align: center;
+}
 
 @keyframes fadeInDown {
   0% {
@@ -1321,7 +1316,7 @@ header {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   html,
   body {
     font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
@@ -1387,6 +1382,11 @@ header {
   .start-box h4,
   .start-box p {
     font-size: 17px;
+    text-align: center;
+  }
+  .footer h4 {
+    background-color: #ffd900;
+    color: #000;
     text-align: center;
   }
 }
